@@ -88,7 +88,7 @@ body {
     margin-bottom: 20px;
 }
 
-.products a {
+.products > * {
     text-decoration: none;
 }
 
