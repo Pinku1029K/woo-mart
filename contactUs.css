@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nunito&family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cookie&family=Grand+Hotel&family=Grandstander&family=Grape+Nuts&family=Poppins&family=Montserrat&family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Concert+One&family=Laila:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+}
+
+.contact-address-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 420px;
+    margin-left: 52px;
+    margin-top: 30px;
+    row-gap: 10px;
+}
+
+.contact-address-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffa36a;
+}
+.contact-address {
+    font-family: "Poppins", sans-serif;
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+.contact-numbers-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 420px;
+    margin-left: 52px;
+    row-gap: 10px;
+}
+
+.contact-numbers-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffa36a;
+}
+.contact-numbers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 7px;
+    font-family: "Poppins", sans-serif;
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+.follow-us-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 420px;
+    margin-left: 52px;
+    row-gap: 10px;
+}
+.follow-us-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffa36a;
+}
+.follow-us {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.follow-us a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family:"Poppins", sans-serif;
+    font-size: 18px;
+    border: 1px solid #ffa36a;
+    padding: 2px 3px;
+    color: whitesmoke;
+    width: 110px; 
+    background: #ffa36a;
+    border-radius: 2px;   
+}
+
+.mail-us-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 420px;
+    margin-left: 52px;
+    row-gap: 10px;
+}
+
+.mail-us-header {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffa36a;
+}
+
+.mail-us{
+    font-family: "Poppins", sans-serif;
+    color: #3d3d3d;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 420px) {
+    .contact-address-section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 10px;
+        margin-top: 30px;
+    }
+    .contact-numbers-section {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .follow-us-section {
+        width: calc(100% - 40px);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mail-us-section {
+        width: calc(100% - 40px);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
+
+
+
+

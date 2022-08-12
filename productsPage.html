@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="productsPage.css"/>
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/index.html"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+        <div class="category-search">
+            <select>
+                <option>Category</option>
+                <option>Men</option>
+                <option>Women</option>
+                <option>Shoes</option>
+                <option>Sweaters</option>
+                <option>Jackets</option>
+                <option>Blazers</option>
+            </select>
+            <input placeholder="Search..." />
+        </div>
+
+        <div class="products">
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/peter-england-sweater.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">40%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Peter England Sweater</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$99</span>
+                            <span class="original-price">$149</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/adidas-shoes.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">30%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Adidas Ultraboost Shoes</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$149</span>
+                            <span class="original-price">$199</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/allen-solly-jacket-w.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">50%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Allen Solly Olive Blazer</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$99</span>
+                            <span class="original-price">$199</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/trackpants-1.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">70%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Puma Men's Trackpants</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$75</span>
+                            <span class="original-price">$199</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/nike-metcon.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">50%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Nike Metcon 8</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$199</span>
+                            <span class="original-price">$299</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/blackberrys-sweaters.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">50%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Blackberrys Men's Sweater</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$199</span>
+                            <span class="original-price">$299</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/adidas-hoodie-w.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">40%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Puma Women's Hoodie</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$149</span>
+                            <span class="original-price">$249</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/wildcraft-backpack.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">25%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Wildcraft Backpack</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$75</span>
+                            <span class="original-price">$99</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/peter-england-blazer.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">40%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Peter England Blazer</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$299</span>
+                            <span class="original-price">$399</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/adidas-tshirt-2.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">45%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Adidas Men's Tshirt</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$75</span>
+                            <span class="original-price">$129</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/reebok-jacket.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">30%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Reebok Men's Jacket</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$149</span>
+                            <span class="original-price">$199</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/shorts-1.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">40%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Adidas Men's Shorts</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$75</span>
+                            <span class="original-price">$129</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/wildcraft-tshirt.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">50%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Wildcraft T-shirt</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$49</span>
+                            <span class="original-price">$99</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/adidas-tshirt-w.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">45%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Adidas Women's Tshirt</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$49</span>
+                            <span class="original-price">$89</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/adidas-shoes-w.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">30%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Adidas Women Sneakers</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$149</span>
+                            <span class="original-price">$199</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+            <div class="each-product">
+                <div class="product-img">
+                    <img src="images/No BG/allen-solly-shirt.png" alt=""/>
+                    <div class="off">
+                        <div>
+                        <span class="off-percentage">40%</span>
+                        <span class="off-text">OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span id="product-name">Allen Solly Shirt</span>
+                    <div class="price-rating">
+                        <div class="price">
+                            <span class="offer-price">$75</span>
+                            <span class="original-price">$129</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                        </div>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="useful-links">
+                <span class="useful-links-header">
+                    Useful Links -
+                </span>
+                <div class="links">
+                    <a href="/aboutUs.html">About Us</a>
+                    <a href="/contactUs.html">Contact Us</a>
+                    <a href="#">Help Center</a>
+                    <a href="/emailUs.html">E-mail Us</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Cancellation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+            <div class="news-letter-section">
+                <span class="news-letter-header">
+                    Signup for Newsletters -
+                </span>
+                <div class="news-letter">
+                    <p>Get E-mail updates about our latest offers!</p>
+                    <div class="news-letter-input">
+                        <input placeholder="Email Address" />
+                        <button>Signup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="office-address">
+                <span class="office-address-header">Office Address - </span>
+                <p class="address">
+                No. 3, RMZ Infinity Tower, Old Madras Road 4th and 5th floors,
+                Bangalore, 560016, India
+                </p>
+            </div>
+            <div class="get-app">
+                <span class="get-app-header">Get our app on - </span>
+                <div class="get-app-options">
+                    <div class="get-app-option">
+                        <img src="images/No BG/play-store.png" alt=""/>
+                        <p>Google Playstore</p>
+                    </div>
+                    <div class="get-app-option">
+                        <img src="images/No BG/app-store.png" alt=""/>
+                        <p>Apple Appstore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        const sidebar = document.getElementById("sidebar")
+
+        function openSidebar() {
+            sidebar.classList.add("open")
+        }
+
+        function closeSidebar() {
+        sidebar.classList.remove("open")
+        sidebar.classList.add("close")
+        }
+    </script>
+</body>
+</html>

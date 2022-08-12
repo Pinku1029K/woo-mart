@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="emailUs.css" />
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/index.html"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+        <div class="email-us-section">
+            <div class="to-section">
+                <span>To : </span>
+                <p>woomart12345@support.com</p>
+            </div>
+            <div class="from-section">
+                <span>From : </span>
+                <p>George Hamilton</p>
+            </div>
+            <div class="body-section">
+                <textarea placeholder="Type here.." maxlength="282" rows="6"></textarea>
+            </div>
+            <button>Send <i class="fas fa-paper-plane"></i></button>
+        </div>
+
+    </div>
+    <script>
+        const sidebar = document.getElementById("sidebar")
+
+    function openSidebar() {
+        sidebar.classList.add("open")
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove("open")
+        sidebar.classList.add("close")
+    }
+    </script>
+</body>
+</html>

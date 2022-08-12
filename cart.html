@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="cart.css" />
+    <title>My Shopping Cart</title>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/index.html"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart-total">
+                <div class="subtotal">
+                    <p>Subtotal - </p>
+                    <span>$499</span>
+                </div>
+                <div class="shipping">
+                    <p>Shipping -</p>
+                    <span>$50</span>
+                </div>
+                <div class="estimated-total">
+                    <p>Estimated Total -</p>
+                    <span>$549</span>
+                </div>
+                <button>Checkout <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/No BG/samsung-watch.png"/>
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">
+                            <span>Samsung Galaxy Watch</span>
+                        </div>
+                        <div class="cart-item-qty-rating">
+                            <div class="cart-item-qty">
+                                <button>-</button>
+                                <span>9</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-remove">
+                            <div class="cart-item-price">
+                                <span>$249</span>
+                            </div> 
+                            <div class="cart-item-remove">
+                                <button>Remove from <i class="fas fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/No BG/reebok-women-sneakers.png"/>
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">
+                            <span>Reebok Women Sneakers</span>
+                        </div>
+                        <div class="cart-item-qty-rating">
+                            <div class="cart-item-qty">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-remove">
+                            <div class="cart-item-price">
+                                <span>$199</span>
+                            </div>  
+                           
+                            <div class="cart-item-remove">
+                                <button>Remove from  <i class="fas fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/No BG/xps-13.png"/>
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">
+                            <span>Dell XPS 13 Plus</span>
+                        </div>
+                        <div class="cart-item-qty-rating">
+                            <div class="cart-item-qty">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-remove">
+                            <div class="cart-item-price">
+                                <span>$1,999</span>
+                            </div>
+                            
+                            <div class="cart-item-remove">
+                                <button>Remove from  <i class="fas fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item-img">
+                        <img src="images/No BG/w-tshirt-3.png"/>
+                    </div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">
+                            <span>Adidas Women's T-shirt</span>
+                        </div>
+                        <div class="cart-item-qty-rating">
+                            <div class="cart-item-qty">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <div class="cart-item-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item-price-remove">
+                            <div class="cart-item-price">
+                                <span>$149</span>
+                            </div>
+                           
+                            <div class="cart-item-remove">
+                                <button>Remove from  <i class="fas fa-shopping-bag"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function handleHomeIconClick() {
+        window.location = "/"
+    }
+
+    const sidebar = document.getElementById("sidebar")
+
+        function openSidebar() {
+            sidebar.classList.add("open")
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open")
+            sidebar.classList.add("close")
+        }
+
+</script>
+</html>

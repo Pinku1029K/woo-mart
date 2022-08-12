@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nunito&family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cookie&family=Grand+Hotel&family=Grandstander&family=Grape+Nuts&family=Poppins&family=Montserrat&family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Concert+One&family=Laila:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+}
+
+
+.email-us-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    row-gap: 15px;
+    padding: 12px 10px;
+    background: #ffbc93;
+    border: 2px solid #ffbc93;
+    border-radius: 2px;
+}
+.from-section, .to-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    background: white;
+    padding: 5px 6px;
+    font-size: 17px;
+    color: #494949;
+    border-radius: 2px;
+}
+
+.from-section span, .to-section span {
+    font-weight: 500;
+}
+
+.email-us-section textarea {
+    outline: none;
+    border: 3px solid white;
+    border-radius: 2px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    padding: 3px 3px;
+    color: #494949;
+    background: white;
+    width: 525px;
+}
+
+.email-us-section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    column-gap: 8px;
+    color: #494949;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid white;
+    background: white;
+    border-radius: 2px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.email-us-section button:hover {
+    filter: brightness(94%);
+}
+
+.email-us-section button i {
+    color: #ffa36a;
+    font-size: 17.5px;
+}
+
+@media only screen and (max-width: 840px) {
+    .email-us-section {
+        width: 500px;
+        margin-top: 100px;
+    }
+    .email-us-section textarea {
+        width: 475px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .email-us-section {
+        width: 350px;
+        margin-top: 150px;
+    }
+    .email-us-section textarea {
+        width: 325px;
+        
+    }
+    .from-section, .to-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        background: white;
+        padding: 5px 6px;
+        font-size: 16px;
+        color: #494949;
+        border-radius: 2px;
+    }
+}
+
+
+
+
+
+
+
+
+

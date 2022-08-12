@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css"/>
+    <title>WooMart</title>
+
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/#"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+
+        <div class="explore">
+            <div class="explore-text-button">
+                <span>Biggest deals on <u>popular</u> products!</span>
+                <button onclick="handleClick()">
+                    Shop Now !
+                </button>
+            </div>
+            <img src="images/No BG/sample-8.png">
+            </img>
+        </div>
+
+
+        <div class="deals-of-the-day">
+            <div class="deals-of-the-day-header">
+                <p><u>Deals</u> of The Day !</p>
+                <button>View All</button>
+            </div>
+            <button class="prev-btn" id="pre-btn">
+                <i class="fas fa-chevron-left" id="prev-btn"></i>
+            </button>
+            <button class="next-btn" id="nxt-btn">
+                <i class="fas fa-chevron-right" id="next-btn"></i>
+            </button>
+            
+            <div class="deals-of-the-day-products" id="deals-container">
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/adidas-tshirt.png" alt=""/>
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">70%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Adidas Men's T-shirt</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$30</span>
+                                <span class="original-price">$65</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/nike-air-zoom.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">50%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Nike Air Zoom</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$125</span>
+                                <span class="original-price">$225</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/reebok-joggers.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">30%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Reebok Identity Joggers</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$45</span>
+                                <span class="original-price">$75</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/allen-solly-shirt-2.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">40%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Allen Solly Men's Shirt</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$120</span>
+                                <span class="original-price">$200</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/apple-watch.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">50%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Apple Watch Series 16</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$700</span>
+                                <span class="original-price">$1400</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/adidas-shoes.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">45%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Adidas Ultraboost</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$129</span>
+                                <span class="original-price">$249</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/bose-quietcomfort.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">25%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Bose QuietComfort 45</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$125</span>
+                                <span class="original-price">$199</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="exclusive">
+            <div class="exclusive-header">
+                <p>Exclusive on <u>Woomart</u></p>
+            </div>
+            <div class="exclusive-product">
+                <div class="exclusive-product-img">
+                    <img src="images/No BG/speaker-2.png" alt="" />
+                </div>
+                <div class="exclusive-product-info">
+                    <span>Harman Kardon</span>
+                    <p>Aura Studio 3 Wireless Bluetooth Outdoor Speaker</p>
+                    <a href="/eachProduct.html"><button>Shop Now!</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="deals-of-the-day">
+            <div class="deals-of-the-day-header">
+                <p><u>New</u> Arrivals!</p>
+                <button>View All</button>
+            </div>
+            <button class="prev-btn" id="pre-btn">
+                <i class="fas fa-chevron-left" id="prev-btn-second"></i>
+            </button>
+            <button class="next-btn" id="nxt-btn">
+                <i class="fas fa-chevron-right" id="next-btn-second"></i>
+            </button>
+            
+            <div class="deals-of-the-day-products" id="arrivals-container">
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/airpods-1.png" alt=""/>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Apple Airpods White</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/theory-chambers-blazer.png" alt="" />
+                        
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Theory Chambers Blazer</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$799</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/iphone-13.png" alt="" />
+                        
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Apple Iphone 13 Pro</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$1,499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/reebok-women-sneakers.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Reebok Women Sneakers</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$199</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/titan-watch-1.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Titan Smart 3</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$299</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/trimmer-2.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Meridian Body Trimmer</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$249</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/headphones-2.png" alt="" />
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Corsair Headphone</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <p>From</p>
+                                <span class="offer-price">$199</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="winter-essentials">
+            <div class="winter-essentials-text">
+                <span>Winter Essentials!</span>
+                <p>Buy jackets, shoes, sweaters and much more at lowest prices!</p>
+                <a href="/eachProduct.html"><button>Shop Now!</button></a>
+            </div>
+            <div class="winter-essentials-img">
+                <img src="images/No BG/winter-essentials-3.png"/>
+            </div>
+        </div>
+
+        <div class="deals-of-the-day">
+            <div class="deals-of-the-day-header">
+                <p><u>Sponsored</u> Products!</p>
+                <button>View All</button>
+            </div>
+            <button class="prev-btn" id="prev-btn-third">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn" id="next-btn-third">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="deals-of-the-day-products" id="sponsored-container">
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/allen-solly-jacket-w.png" alt=""/>
+                
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Allen Solly Jacket</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$199</span>
+                                <span class="original-price">$249</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/sony-headphones.png" alt="" />
+                        
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Sony M10 Headphone</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$199</span>
+                                <span class="original-price">$299</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/adidas-shoes-w.png" alt="" />
+                        
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Adidas Women Sneakers</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$49</span>
+                                <span class="original-price">$79</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/peter-england-tshirt.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Peter England T-shirt</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$30</span>
+                                <span class="original-price">$50</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/adidas-backpack.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Adidas Classics Bag</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$25</span>
+                                <span class="original-price">$50</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/blackberrys-blazer.png" alt="" />
+                       
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Blackberrys Blazer</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$249</span>
+                                <span class="original-price">$399</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/samsung-s21-fe.png" alt="" />
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Samsung Galaxy S21 FE</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$599</span>
+                                <span class="original-price">$799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>        
+
+        <div class="why-woomart">
+            <div class="why-woomart-header">
+                Why <span>Woomart</span> ?
+            </div>
+            <div class="why-woomart-points">
+                <span>7 Days Replacement Policy</span>
+                <span>100% Genuine Products</span>
+                <span>Free Shipping on Orders Above $50</span>
+                <span>Warranty on All Products</span>
+                <span>Home Delivery Under 3 Days</span>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="useful-links">
+                <span class="useful-links-header">
+                    Useful Links -
+                </span>
+                <div class="links">
+                    <a href="/aboutUs.html">About Us</a>
+                    <a href="/contactUs.html">Contact Us</a>
+                    <a href="#">Help Center</a>
+                    <a href="/emailUs.html">E-mail Us</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Cancellation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+            <div class="news-letter-section">
+                <span class="news-letter-header">
+                    Signup for Newsletters -
+                </span>
+                <div class="news-letter">
+                    <p>Get E-mail updates about our latest offers!</p>
+                    <div class="news-letter-input">
+                        <input placeholder="Email Address" />
+                        <button>Signup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="office-address">
+                <span class="office-address-header">Office Address - </span>
+                <p class="address">
+                No. 3, RMZ Infinity Tower, Old Madras Road 4th and 5th floors,
+                Bangalore, 560016, India
+                </p>
+            </div>
+            <div class="get-app">
+                <span class="get-app-header">Get our app on - </span>
+                <div class="get-app-options">
+                    <div class="get-app-option">
+                        <img src="images/No BG/play-store.png" alt=""/>
+                        <p>Google Playstore</p>
+                    </div>
+                    <div class="get-app-option">
+                        <img src="images/No BG/app-store.png" alt=""/>
+                        <p>Apple Appstore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        const nextBtn = document.getElementById("nxt-btn")
+        const prevBtn = document.getElementById("pre-btn")
+        const prevBtnSecond = document.getElementById("prev-btn-second")
+        const nextBtnSecond = document.getElementById("next-btn-second")
+        const dealsContainer = document.getElementById("deals-container")
+        const arrivalsContainer = document.getElementById("arrivals-container")
+        const prevBtnThird = document.getElementById("prev-btn-third")
+        const nextBtnThird = document.getElementById("next-btn-third")
+        const sponsoredContainer = document.getElementById("sponsored-container")
+
+        const containerWidth = dealsContainer.clientWidth
+
+        nextBtnThird.addEventListener("click", () => {
+            sponsoredContainer.scrollLeft += (30/100) * sponsoredContainer.clientWidth
+        })
+
+        prevBtnThird.addEventListener("click", () => {
+            sponsoredContainer.scrollLeft -= (30/100) * sponsoredContainer.clientWidth
+        })
+
+        nextBtnSecond.addEventListener("click", () => {
+            arrivalsContainer.scrollLeft += (30/100) * arrivalsContainer.clientWidth
+        })
+
+        prevBtnSecond.addEventListener("click", () => {
+            arrivalsContainer.scrollLeft -= (30/100) * arrivalsContainer.clientWidth
+        })
+
+
+        if(prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                console.log(window.innerWidth)
+                dealsContainer.scrollLeft -= (30/100) * containerWidth
+            })
+        }
+
+        if(nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                console.log(window.innerWidth)
+                dealsContainer.scrollLeft += (30/100) * containerWidth
+            })
+        }
+
+        const sidebar = document.getElementById("sidebar")
+
+        function openSidebar() {
+            sidebar.classList.add("open")
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open")
+            sidebar.classList.add("close")
+        }
+
+        function handleClick() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            })
+        }
+
+    </script>
+</body>
+</html>

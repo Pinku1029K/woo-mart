@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Each Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="eachProduct.css" />
+</head>
+<body>
+    <div class="product-page">
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/index.html"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+        <div class="each-product">
+            <div class="product-img">
+                <div class="main-img">
+                    <img src="images/No BG/pixel-6pro.png" alt=""/>
+                </div>
+                <div class="other-img">
+                    <div class="each-other-img-selected">
+                        <img src="images/No BG/pixel-6pro.png"/>
+                    </div>
+                    <div class="each-other-img">
+                        <img src="images/No BG/pixel-6pro-3.png"/>
+                    </div>
+                    <div class="each-other-img">
+                        <img src="images/No BG/pixel-6pro-4.png"/>
+                    </div>
+                    <div class="each-other-img">
+                        <img src="images/No BG/pixel-6pro-2.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-name">
+                    Google Pixel 6 Pro (Sorta Sunny, 6 GB RAM, 128 GB ROM)
+                </div>
+                <div class="product-rating">
+                    <div class="rating-stars">
+                        <i class="fas fa-star" id="star-filled"></i>
+                        <i class="fas fa-star" id="star-filled"></i>
+                        <i class="fas fa-star" id="star-filled"></i>
+                        <i class="fas fa-star" id="star-filled"></i>
+                        <i class="fas fa-star" id="star-empty"></i>
+                    </div>
+                    <div class="rating-count">
+                        179 Ratings & 21 Reviews
+                    </div>  
+                </div>
+                <div class="product-price">
+                    <span class="offer-price">
+                        $599
+                    </span>
+                    <span class="original-price">
+                        $799
+                    </span>
+                    <p class="offer-percentage">
+                        30% off
+                    </p>
+                </div>
+                <div class="free-delivery">
+                    <u>FREE</u> delivery available!
+                </div>
+                <div class="buy-cart-btn">
+                    <button class="buy-now">
+                        Buy now
+                    </button>
+                    <button class="add-to-cart">
+                        Add to cart
+                    </button>
+                </div>
+                <div class="product-colors">
+                    <p>Color: </p>
+                    <div class="colors">
+                        <div class="each-color-selected"></div>
+                        <div class="each-color"></div>
+                        <div class="each-color"></div>
+                        <div class="each-color"></div>
+                    </div>
+                </div>
+                <div class="product-size">
+                    <p>Size: </p>
+                    <div class="sizes">
+                        <div class="each-size-selected">S</div>
+                        <div class="each-size">M</div>
+                        <div class="each-size">L</div>
+                        <div class="each-size">XL</div>
+                    </div>
+                </div>
+                <div class="delivery">
+                    <div class="delivery-check">
+                        <input placeholder="Enter Pincode" />
+                        <button>
+                            <i class="fas fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="delivery-status">
+                        Usually delivered under 3 days.
+                    </div>
+                </div>
+                <div class="key-features-section">
+                    <div class="key-features-header">
+                        Key Features
+                    </div>
+                    <div class="key-features">
+                        <div class="each-key-feature">
+                            <p>RAM: </p>
+                            <span>6 GB</span>
+                        </div>
+                        <div class="each-key-feature">
+                            <p>ROM: </p>
+                            <span>128 GB</span>
+                        </div>
+                        <div class="each-key-feature">
+                            <p>Display: </p>
+                            <span>6.71 inch</span>
+                        </div>
+                        <div class="each-key-feature">
+                            <p>Battery: </p>
+                            <span>5003 mAh Li-Ion</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-details-section">
+                    <div class="all-details-header">
+                        All Details
+                    </div>
+                    <div class="all-details">
+                        <div class="each-detail">
+                            <p>Launch: </p>
+                            <span>2021, October 19</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Processor: </p>
+                            <span>Google Tensor 5nm</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Dimensions: </p>
+                            <span>6.45 x 2.99 x 0.35 in</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Network: </p>
+                            <span>GSM / LTE / 5G</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>OS: </p>
+                            <span>Android OS v12</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Main Camera: </p>
+                            <span>50MP f/1.9 25mm</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Bluetooth: </p>
+                            <span>5.2, A2DP, LE, HD</span>
+                        </div>
+                        <div class="each-detail">
+                            <p>Weight: </p>
+                            <span>210g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sold-by-section">
+                    <div class="sold-by-header">
+                        Sold By
+                    </div>
+                    <div class="sold-by">
+                        <span>BBT Electronics</span>
+                        <div class="seller-rating">
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-filled"></i>
+                            <i class="fas fa-star" id="star-empty"></i>
+                        </div>
+                    </div>
+                    <div class="contact-seller">
+                        <button>Contact Seller</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-reviews">
+                <div class="product-reviews-header">
+                    Reviews
+                </div>
+                <div class="reviews">
+                    <div class="each-review">
+                        <div class="username-rating">
+                            <span>Smith Jordan</span>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                        <div class="user-review">
+                            Very nice product from Google as always. The camera 
+                            quality is brilliant and the low-light shots are 
+                            amazing. The battery should have been better...
+                        </div>
+                    </div>
+                    <div class="each-review">
+                        <div class="username-rating">
+                            <span>John Mill</span>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                        <div class="user-review">
+                            Hi i am John Mill and i purchased this product 15 days ago 
+                            and after 15 days of regular use i must say that this phone 
+                            is brilliant for processing and day-to-day tasks.
+                        </div>
+                    </div>
+                    <div class="each-review">
+                        <div class="username-rating">
+                            <span>George Hamilton</span>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                            </div>
+                        </div>
+                        <div class="user-review">
+                            Amazing product under this price tag, the camera 
+                            quality is better than that of iPhone 13's. The UI
+                            is amazing and i love just using the phone all day.
+                            Network speed is also very fast on this.
+                        </div>
+                    </div>
+                </div>
+                <button>Show more...</button>
+            </div>
+            
+        </div>
+
+        <div class="deals-of-the-day">
+            <div class="deals-of-the-day-header">
+                <p><u>Similar</u> Products!</p>
+                <button>View All</button>
+            </div>
+            <button class="prev-btn" id="pre-btn">
+                <i class="fas fa-chevron-left" id="prev-btn"></i>
+            </button>
+            <button class="next-btn" id="nxt-btn">
+                <i class="fas fa-chevron-right" id="next-btn"></i>
+            </button>
+            
+            <div class="deals-of-the-day-products" id="deals-container">
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/samsung-s21-fe.png" alt=""/>
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">30%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Samsung Galaxy S21 FE</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$499</span>
+                                <span class="original-price">$599</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/peter-england-sweater.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">40%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Peter England Sweater</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$149</span>
+                                <span class="original-price">$249</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/samsung-watch.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">30%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Samsung Galaxy Watch</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$299</span>
+                                <span class="original-price">$399</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/allen-solly-shirt-2.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">30%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Allen Solly Men's Shirt</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$50</span>
+                                <span class="original-price">$75</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/reebok-shoes-w.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">50%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Reebok Women Shoes</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$49</span>
+                                <span class="original-price">$99</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/wildcraft-backpack.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">45%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>WildCraft Backpack</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$25</span>
+                                <span class="original-price">$45</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/blackberrys-blazer.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">25%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Blackberrys Blazer</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$199</span>
+                                <span class="original-price">$249</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="/eachProduct.html">
+                <div class="each-deal">
+                    <div class="deal-img">
+                        <img src="images/No BG/adidas-shoes.png" alt="" />
+                        <div class="off">
+                            <div>
+                            <span class="off-percentage">50%</span>
+                            <span class="off-text">OFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-info">
+                        <div class="name">
+                            <span>Adidas Ultraboost</span>
+                        </div>
+                        <div class="price-rating">
+                            <div class="price">
+                                <span class="offer-price">$149</span>
+                                <span class="original-price">$299</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                                <i class="fas fa-star" id="star-filled"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="useful-links">
+                <span class="useful-links-header">
+                    Useful Links -
+                </span>
+                <div class="links">
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">E-mail Us</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Cancellation</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+            <div class="news-letter-section">
+                <span class="news-letter-header">
+                    Signup for Newsletters -
+                </span>
+                <div class="news-letter">
+                    <p>Get E-mail updates about our latest offers!</p>
+                    <div class="news-letter-input">
+                        <input placeholder="Email Address" />
+                        <button>Signup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="office-address">
+                <span class="office-address-header">Office Address - </span>
+                <p class="address">
+                No. 3, RMZ Infinity Tower, Old Madras Road 4th and 5th floors,
+                Bangalore, 560016, India
+                </p>
+            </div>
+            <div class="get-app">
+                <span class="get-app-header">Get our app on - </span>
+                <div class="get-app-options">
+                    <div class="get-app-option">
+                        <img src="images/No BG/play-store.png" alt=""/>
+                        <p>Google Playstore</p>
+                    </div>
+                    <div class="get-app-option">
+                        <img src="images/No BG/app-store.png" alt=""/>
+                        <p>Apple Appstore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const nextBtn = document.getElementById("nxt-btn")
+        const prevBtn = document.getElementById("pre-btn")
+        const dealsContainer = document.getElementById("deals-container")
+
+        const containerWidth = dealsContainer.clientWidth
+
+
+        if(prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                console.log(window.innerWidth)
+                dealsContainer.scrollLeft -= (30/100) * containerWidth
+            })
+        }
+
+        if(nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                console.log(window.innerWidth)
+                dealsContainer.scrollLeft += (30/100) * containerWidth
+            })
+        }
+        
+        const sidebar = document.getElementById("sidebar")
+
+        function openSidebar() {
+            sidebar.classList.add("open")
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open")
+            sidebar.classList.add("close")
+        }
+
+        function handleClick() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            })
+        }
+    </script>
+</body>
+</html>

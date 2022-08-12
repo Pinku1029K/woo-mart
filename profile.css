@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Nunito&family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cookie&family=Grand+Hotel&family=Grandstander&family=Grape+Nuts&family=Poppins&family=Montserrat&family=Offside&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Concert+One&family=Laila:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffe3d2;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    row-gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+    margin-top: 5px;
+}
+
+.picture-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.profile-pic {
+    width: 190px;
+    height: 190px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.picture-name span {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #3d3d3d;
+    font-weight: 500;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: calc(100% - 100px);
+}
+
+.products, .sales-today, .profit-today,
+.sales-this-month, .profit-this-month,
+.total-sales, .total-profit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    width: 175px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+}
+
+.products-header, .sales-today-header, .profit-today-header,
+.sales-this-month-header, .profit-this-month-header,
+.total-sales-header, .total-profit-header {
+    background: #ffbc93;
+    height: 47px;
+    color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    font-size: 18.2px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.products-count, .sales-today-count, .profit-today-count,
+.sales-this-month-count, .profit-this-month-count,
+.total-sales-count, .total-profit-count {
+    background: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: rgb(72, 228, 58);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+

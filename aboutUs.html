@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="aboutUs.css" />
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="header-title">
+            <span class="woo">Woo</span>
+            <span class="mart">mart</span>
+            </div>
+            <div class="header-options">
+            <a href="/index.html"><i class="fas fa-house"></i></a>
+            <a href="/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <a href="/profile.html"><i class="fas fa-user"></i></a>
+            <a onclick="openSidebar()"><i class="fas fa-bars-staggered"></i></a>
+            </div>
+        </div>
+
+        <div class="sidebar close" id="sidebar">
+            <div class="sidebar-header">
+                <span>Woo mart</span>
+                <i class="fas fa-times" id="close-icon" onclick="closeSidebar()"></i>
+            </div>
+            <ul class="sidebar-options">
+                <li>
+                    <a href="/productsPage.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/aboutUs.html">
+                    <i class="fas fa-address-card"></i>
+                    <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/emailUs.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contactUs.html">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-signup">
+                <a href="/login.html">Login</a>
+                <p>or</p>
+                <a href="/signup.html">Signup</a>
+            </div>
+        </div>
+
+        <div class="about-us-section">
+            <div class="about-us-header">
+                About <u>Us</u>
+            </div>
+            <div class="about-us">
+                <p>
+                    This is Woomart, a service which sells branded
+                    and 100% genuine products at the lowest price possible.
+                    We have all kinds of products like- T-shirts,  Trackpants,
+                    Sweaters, Shirts, Joggers, Shoes, Sneakers, Blazers, Under Garments and much more
+                    of your favourite brands like- Adidas, Allen Solly, Peter England, 
+                    Nike, Reebok, Louis Phillipe, Puma, Blackberrys, Tommy Hilfiger etc.
+                </p>
+            </div>
+            <button>Shop on Woomart</button>
+        </div>
+        <div class="what-else-we-do-section">
+            <div class="what-else-we-do-header">
+                What Else <u>We</u> Do ?
+            </div>
+            <div class="what-else-we-do">
+                <p>
+                    Other than selling products, we also help small business
+                    startups to raise their business by allowing them to sell 
+                    their products on our service. There is no cost for uploading
+                    a product on Woomart, the product gets examined by us and
+                    its added on Woomart if everything is right. We keep a little 
+                    commision for ourselves and the else is all yours.
+                    So start selling on Woomart today. <a href="/contactUs.html">Contact Us</a> for more
+                    details.
+                </p>
+            </div>
+            <button>Sell on Woomart</button>
+        </div>
+
+    </div>
+    <script>
+        const sidebar = document.getElementById("sidebar")
+
+    function openSidebar() {
+        sidebar.classList.add("open")
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove("open")
+        sidebar.classList.add("close")
+    }
+    </script>
+</body>
+</html>
