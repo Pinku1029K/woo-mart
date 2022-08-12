@@ -88,6 +88,10 @@ body {
     margin-bottom: 20px;
 }
 
+.products a {
+    text-decoration: none;
+}
+
 .each-product {
     display: flex;
     align-items: center;
