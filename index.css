@@ -239,6 +239,7 @@ wheat = #f9c784
     background: linear-gradient(180deg, whitesmoke, #ffae7c);
     height: calc(100vh - 60px);
     border: 1px solid whitesmoke;
+    overflow: hidden;
 }
 
 .explore-text-button {
